@@ -127,5 +127,29 @@ class Center_model extends CI_Model {
         $this->db->trans_complete();
         return $this->db->trans_status();
     }
+
+    // <-----------------------New APIs for center Managemnet----------------------->
+
+    public function insertCenter($data){
+        $this->db->insert('center_details', $data);
+        return $this->db->insert_id();
+    }
+    public function getCenter($id)
+{
+    $query = $this->db->get_where('center_details', ['id' => $id]);
+    return $query->row_array();
+}
+public function updateCenter($id, $data)
+{
+    $this->db->where('id', $id);
+    return $this->db->update('center_details', $data);
+}
+
+public function deleteCenter($id)
+{
+    $this->db->where('id', $id);
+    return $this->db->delete('center_details');
+}
+
 }
 ?>

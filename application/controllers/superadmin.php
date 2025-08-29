@@ -66,8 +66,7 @@ public function SignUp(){
 
 	public function EventAndNotice(){
 		$this->load->view('superadmin/EventAndNotice');
-	}
-	
+	}	
 
 
 }
