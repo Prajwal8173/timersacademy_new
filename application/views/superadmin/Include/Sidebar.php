@@ -215,12 +215,12 @@
            href="<?php echo base_url('superadmin/Renew_admission'); ?>">
           <i class="bi bi-arrow-repeat"></i><span> Renew Admission</span>
         </a>
-                        <a class="nav-link <?php echo ($this->uri->segment(2) == 'Re_admission_list') ? 'active' : ''; ?>" 
-           href="<?php echo base_url('superadmin/Re_admission_list'); ?>">
+                        <a class="nav-link <?php echo ($this->uri->segment(2) == 'View_Re_Admission') ? 'active' : ''; ?>" 
+           href="<?php echo base_url('superadmin/View_Re_Admission'); ?>">
           <i class="bi bi-eye"></i><span> View Re-Admission</span>
         </a>
-                        <a class="nav-link <?php echo ($this->uri->segment(2) == 'Re_admission_list') ? 'active' : ''; ?>" 
-           href="<?php echo base_url('superadmin/Re_admission_list'); ?>">
+                        <a class="nav-link <?php echo ($this->uri->segment(2) == 'View_Renew_Students') ? 'active' : ''; ?>" 
+           href="<?php echo base_url('superadmin/View_Renew_Students'); ?>">
           <i class="bi bi-eye"></i><span> View Renew-Admission</span>
         </a>
                     </nav>
